@@ -1,0 +1,25 @@
+<main class="mesa">
+  <section class="conteudo">
+    <h1>Escolha uma carta</h1>
+
+    <app-lista-naipes
+      [naipes]="naipes"
+      [naipeSelecionado]="naipeSelecionado"
+      (naipeEscolhido)="naipeSelecionado = $event"
+    ></app-lista-naipes>
+
+    <app-lista-valores
+      [valores]="valores"
+      [valorSelecionado]="valorSelecionado"
+      (valorEscolhido)="valorSelecionado = $event"
+    ></app-lista-valores>
+
+    <div class="area-carta">
+      <app-carta
+        *ngIf="naipeSelecionado && valorSelecionado"
+        [naipe]="naipeSelecionado"
+        [valor]="valorSelecionado"
+      ></app-carta>
+    </div>
+  </section>
+</main>

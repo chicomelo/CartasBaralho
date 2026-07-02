@@ -1,0 +1,13 @@
+<h2>Cartas</h2>
+
+<div class="opcoes">
+  <button
+    *ngFor="let valor of valores"
+    type="button"
+    class="valor"
+    [class.selecionado]="valor === valorSelecionado"
+    (click)="escolherValor(valor)"
+  >
+    {{valor}}
+  </button>
+</div>

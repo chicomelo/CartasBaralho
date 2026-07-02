@@ -1,0 +1,32 @@
+.carta {
+  width: 150px;
+  height: 220px;
+  position: relative;
+  background-color: white;
+  border: 1px solid #d7d7d7;
+  border-radius: .4em;
+  box-shadow: 4px 5px 8px rgba(0, 0, 0, .45);
+}
+
+.valor {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  font-size: 1.5em;
+}
+
+.simbolo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+}
+
+.preto {
+  color: black;
+}
+
+.vermelho {
+  color: red;
+}

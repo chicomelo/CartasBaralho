@@ -1,0 +1,14 @@
+<h2>Naipes</h2>
+
+<div class="opcoes">
+  <button
+    *ngFor="let naipe of naipes"
+    type="button"
+    class="naipe {{naipe.cor}}"
+    [class.selecionado]="naipe === naipeSelecionado"
+    (click)="escolherNaipe(naipe)"
+  >
+    <span class="simbolo">{{naipe.simbolo}}</span>
+    <span class="nome">{{naipe.nome}}</span>
+  </button>
+</div>
